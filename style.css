@@ -1,25 +1,31 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     color: white;
-    font-family: monospace;
 }
+
 span
 {
     color: red;
     text-decoration: underline;
 }
+.company
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
 .hero
 {
-    padding: 5px 10px;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/pics.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
+    /* padding: 10px 10px; */
+    padding: 1% 1%;
+    width: 98vw;
+    height: 96vh;
+    font-family: monospace;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(./paste.jpeg);
     background-size: cover;
-    height: 98.3vh;
-    width: 98.3%;
+    background-position: center;
 }
+
 nav
 {
     display: flex;
@@ -29,14 +35,47 @@ nav
 
 li
 {
-    display: inline-block;
     list-style: none;
+    font-weight: bolder;
+    padding: 5px 10px;
+    display: inline-block;
 }
 
-ul li ul li
+.log
 {
-    display: block;
+    background-color: red;
+    width: 7.6%;
+    border: 1px black solid;
+    border-radius: 12px;
+    padding: 5px 5px;
+}
+a
+{
+    text-decoration: none;
+}
+nav ul li a
+{
+    /* display: block; */
+    text-decoration: none;
+    transform: 0.3s;
+}
+
+nav ul li a:hover
+{
+    color: red;
+}
+
+.log:hover
+{
+    background-color: rgb(208, 2, 2);
+    transform: ease-in 0.4;
+    cursor: pointer;
+}
+
+ul li ul.dropdown li
+{
     padding: 5px 0;
+    display: block;
 }
 
 ul li ul.dropdown
@@ -44,46 +83,102 @@ ul li ul.dropdown
     display: none;
     z-index: 999;
     position: absolute;
+    /* left: 48.5% */
+}
+ul li:hover ul.dropdown
+{
+    display: block;
 }
 
-ul li:hover ul.dropdown 
+ul li ul.dropdown1 li
 {
+    padding: 5px 0;
     display: block;
 }
-ul li:hover ul.dropdown1
-{
-    display: block;
-}
+
 ul li ul.dropdown1
 {
     display: none;
-    z-index: 999;
     position: absolute;
+    z-index: 999;
+    /* left: 55.7%; */
+} 
+ul li:hover ul.dropdown1
+{
+    display: block;
+} 
+
+.btn-up
+{
+    display: inline-block;
+    position: relative;
+    top: 55%;
+    left: 65%;
 }
 
-.log
+.aro 
 {
-    background-color: red;
-    width: 7%;
-    border: 1px black solid;
-    border-radius: 12px;
-    padding: 5px 5px;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    z-index: 999;
 }
-.log:hover
+
+.som
+{
+    display: inline-block;
+    font-size: x-large;
+    width: 30%;
+    font-family: serif, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 15%;
+    left: 3%;
+}
+.di
+{
+    display: inline-block;
+    font-size: x-large;
+    width: 30%;
+    font-family: serif, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 22%;
+    left: 3%;
+}
+
+.desc
+{
+    width: 35%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 17%;
+    left: 3%;
+
+}
+
+.slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 10px 0;
+}
+
+.slider .picture
+{
+    height: 200px;
+    width: 400px;
+    border: 4px black solid;
+}
+.mid
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img
 {
     cursor: pointer;
-}
-
-a
-{
-    text-decoration: none;
-}
-ul li
-{
-    padding: 10px;
-}
-
-ul li a:hover
-{
-    color: red;
 }

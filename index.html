@@ -6,38 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
     <title>NavBar</title>
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
-            <a href="index.html">
-                <h1>John<span>Doe&nbsp;</span></h1>
-            </a>
-            <ul>
+    <section class="header" id="top">
+        <div class="hero">
+            <nav>
+                <a href="index.html">
+                    <h1 class="company">John<span>Doe&nbsp;</span></h1>
+                </a>
+                <ul>
 
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Products</a>
-                    <ul class="dropdown">
-                        <li><a href="">Bikes</a></li>
-                        <li><a href="">Scooters</a></li>
-                        <li><a href="">Bicycles</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Our Team</a>
-                    <ul class="dropdown1">
-                        <li><a href="">CEO</a></li>
-                        <li><a href="">CTO</a></li>
-                        <li><a href="">CFO</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button type="submit" class="log">Login In</button>
-        </nav>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="">Bikes</a></li>
+                            <li><a href="">Scooters</a></li>
+                            <li><a href="">Bicycles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Our Team</a>
+                        <ul class="dropdown1">
+                            <li><a href="">CEO</a></li>
+                            <li><a href="">CTO</a></li>
+                            <li><a href="">CFO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button type="submit" class="log">Login</button>
+            </nav>
+            <div class="som">
+                <h1>We design Future....</h1>
+                <h1>And You ?</h1>
+            </div>
+            <div class="desc">
+                <p>Discover the power of AI with John Doe, a cutting-edge platform dedicated to harnessing the potential
+                    of artificial intelligence</p>
+            </div>
+            <div class="di">
+                <h1>JUST '<span>DOE&nbsp</span>' IT</h1>
+            </div>
+            <div class="btn-up">
+                <a href="#top" class=""><img src="arrow-up.png" alt="up-arrow" class="aro"></a>
+            </div>
+        </div>
+    </section>
+    <div class="slider" id="slid">
+        <div style="margin-right: 15px;">
+            <a href="#slid"><img src="https://th.bing.com/th/id/OIP.pyebTcVbSGzpqcwn1jw8eAD6D6?pid=ImgDet&rs=1" alt="" class="prev" height="50px" width="50px"></a>
+        </div>
+        <div class="mid">
+            <img src="pic1.jpeg" alt="company-img" class="picture">
+            <div >
+                <img src="fill.jpeg" alt="" height="10px" id="t1" class="small">
+                <img src="emp.jpeg" alt="" height="10px" id="t2" class="small">
+                <img src="emp.jpeg" alt="" height="10px" id="t3" class="small">
+            </div>
+        </div>
+        <div style="margin-left: 15px;">
+            <a href="#slid"><img src="https://th.bing.com/th/id/R.c7dc46266af301c35805c59038b03abb?rik=JEiWuRxYjtvwng&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_72479.png&ehk=PWQzjhcat1EAmzY9mxbUyUJ3MFcldb%2fAcSZg14rIa40%3d&risl=&pid=ImgRaw&r=0" alt="" class="next" height="50px" width="50px"></a>
+
+        </div>
     </div>
 
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
